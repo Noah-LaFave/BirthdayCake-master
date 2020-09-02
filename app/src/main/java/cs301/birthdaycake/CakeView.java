@@ -70,7 +70,7 @@ public class CakeView extends SurfaceView {
      */
     public void drawCandle(Canvas canvas, float left, float bottom) {
         canvas.drawRect(left, bottom - candleHeight, left + candleWidth, bottom, candlePaint);
-
+        canvas.drawRect(left, bottom - candleHeight, left + candleWidth, bottom, candlePaint);
         //draw the outer flame
         float flameCenterX = left + candleWidth/2;
         float flameCenterY = bottom - wickHeight - candleHeight - outerFlameRadius/3;
@@ -121,6 +121,7 @@ public class CakeView extends SurfaceView {
 
         //Now a candle in the center
         drawCandle(canvas, cakeLeft + cakeWidth/2 - candleWidth/2, cakeTop);
+        drawCandle(canvas, cakeLeft + cakeWidth/2 - candleWidth/2 + 200, cakeTop);
 
     }//onDraw
 
