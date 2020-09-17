@@ -62,9 +62,11 @@
                 android:text="How many Candles?" />
 
             <SeekBar
-                android:id="@+id/seekBar2"
+                android:id="@+id/seekCandles"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:max="5"
+                android:progress="2" />
         </LinearLayout>
 
         <LinearLayout
@@ -83,13 +85,15 @@
                 android:id="@+id/frosting"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Frosting" />
+                android:text="Frosting"
+                android:checked="true"/>
 
             <Switch
-                android:id="@+id/switch1"
+                android:id="@+id/candle_Sw"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Candles" />
+                android:text="Candles"
+                android:checked="true"/>
 
         </LinearLayout>
 
@@ -107,7 +111,7 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/blowout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Blow Out" />
@@ -116,6 +120,7 @@
                 android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="goodbye"
                 android:text="GoodBye" />
         </LinearLayout>
 
