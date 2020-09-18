@@ -4,6 +4,7 @@ import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -27,9 +28,12 @@ public class MainActivity extends AppCompatActivity {
             CompoundButton CandlesOn = findViewById(R.id.candle_Sw);
             CandlesOn.setOnCheckedChangeListener(GUIController);
 
-        SeekBar numCandles = findViewById(R.id.seekCandles);
+            SeekBar numCandles = findViewById(R.id.seekCandles);
             numCandles.setOnSeekBarChangeListener(GUIController);
+
+            GUIview.setOnTouchListener(GUIController);
     }
+
 
 
 
