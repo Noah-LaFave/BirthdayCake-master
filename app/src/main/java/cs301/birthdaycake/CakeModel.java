@@ -17,6 +17,8 @@ public class CakeModel {
          numCandles = 2;
          B_touch = false;
 
+         touchX = 0;
+         touchY = 0;
     }
 
 

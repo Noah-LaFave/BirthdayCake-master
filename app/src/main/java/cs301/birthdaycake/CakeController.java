@@ -21,21 +21,9 @@ public class CakeController implements View.OnClickListener, CompoundButton.OnCh
 
     @Override
     public void onClick(View view) {
-
-       switch(view.getId()){
-
-           case R.id.blowout:
-               Log.i("button", "hello from onClick");
-               this.model1.lit = false;
-               this.cView.invalidate();
-
-               break;
-
-
-
-
-       }
-
+        Log.i("button", "hello from onClick");
+        this.model1.lit = false;
+        this.cView.invalidate();
 
 
     }
@@ -74,6 +62,6 @@ public class CakeController implements View.OnClickListener, CompoundButton.OnCh
         cView.invalidate();
 
 
-        return true;
+        return false;
     }
 }
